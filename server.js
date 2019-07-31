@@ -23,3 +23,7 @@ app.listen(PORT, function()
 {
   console.log("App listening on PORT " + PORT);
 });
+
+process.on('uncaughtException', function (err) {
+  console.log(err);
+}); 
