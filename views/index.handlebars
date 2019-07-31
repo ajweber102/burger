@@ -18,4 +18,21 @@
 
       </div>
     </div>
+
+    <div class="col-md-4"></div> 
+
+    <div class="col-md-4">
+      <h3 class="submitFont">Burgers D e v o u r e d</h3>
+      <div id="alreadyEaten">
+
+        {{#each burgers}}
+          {{#if this.devoured}}
+            <div class="input-group">
+              <li class="form-control">{{this.id}}. {{this.burger_name}}</li>
+            </div>
+          {{/if}}
+        {{/each}}
+
+      </div>
+    </div>
 </div>
